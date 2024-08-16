@@ -16,59 +16,67 @@ import { FaSass } from 'react-icons/fa';
 
 const TechStack = () => {
   return (
-    <main>
-      <section className="flex p-2 border-2 rounded-[1rem] ">
-        <article className="">
-          <h1 className="">Web Development</h1>
+    <main className="py-16">
+      <h1 className="center text-3xl font-bold mb-5">GOOT AT</h1>
+      <section className="flex p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10">
+        <article className="bg-[#00000031] p-2 rounded-[1rem] flex items-center justify-between w-[52%]">
+          <div>
+            <h1 className="font-medium text-left">Web</h1>
+            <h1 className="font-medium">Development</h1>
+          </div>
+
           <span>
-            <FaCode />
+            <FaCode className="w-12 h-12" />
           </span>
         </article>
-        <article className="flex">
+        <article className="grid grid-cols-6 gap-6 justify-around w-full">
           <span>
-            <GrHtml5 />
+            <GrHtml5 className="w-12 h-12" />
           </span>
           <span>
-            <FaCss3 />
+            <FaCss3 className="w-12 h-12" />
           </span>
           <span>
-            <SiJavascript />
+            <SiJavascript className="w-12 h-12 rounded-[2px]" />
           </span>
           <span>
-            <IoLogoReact />
+            <IoLogoReact className="w-12 h-12" />
           </span>
           <span>
-            <SiNextdotjs />
+            <SiNextdotjs className="w-12 h-12" />
           </span>
           <span>
-            <FaPython />
+            <FaPython className="w-12 h-12" />
           </span>
           <span>
-            <SiGraphql />
+            <SiGraphql className="w-12 h-12" />
           </span>
           <span>
-            <RiTailwindCssFill />
+            <RiTailwindCssFill className="w-12 h-12" />
           </span>
           <span>
-            <FaBootstrap />
+            <FaBootstrap className="w-12 h-12" />
           </span>
           <span>
-            <SiRedux />
+            <SiRedux className="w-12 h-12" />
           </span>
           <span>
-            <SiStyledcomponents />
+            <SiStyledcomponents className="w-12 h-12" />
           </span>
           <span>
-            <FaSass />
+            <FaSass className="w-12 h-12" />
           </span>
         </article>
       </section>
-      <section>
-        <article>
-          <h1>Data Science</h1>
+      <section className="flex p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10 mt-10">
+        <article className="bg-[#00000031] p-2 rounded-[1rem] flex items-center justify-between w-[52%] gap-6">
+          <div>
+            <h1 className="font-medium text-left">Data</h1>
+            <h1 className="font-medium">Science</h1>
+          </div>
           <span>
             <svg
-              className="w-16 h-16"
+              className="w-12 h-12 fill-[#003049]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -84,18 +92,19 @@ const TechStack = () => {
             </svg>
           </span>
         </article>
-        <article>
+        <article className="grid grid-cols-6 gap-6 justify-around w-full">
           <span>
-            <FaPython />
+            <FaPython className="w-12 h-12" />
           </span>
           <span>
-            <SiNumpy />
+            <SiNumpy className="w-12 h-12" />
           </span>
           <span>
-            <SiPandas />
+            <SiPandas className="w-12 h-12" />
           </span>
           <span>
             <svg
+              className="w-12 h-12 fill-[#003049]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
