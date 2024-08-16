@@ -35,7 +35,7 @@ const Contact = () => {
         </article>
       </section>
       <form action="" className="w-full">
-        <label class="block ">
+        <label className="block ">
           <input
             placeholder="Name"
             type="text"
