@@ -68,7 +68,6 @@ export function Projects() {
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
-                  priority
                   width={200}
                   height={200}
                   src={active.src}
