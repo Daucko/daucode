@@ -8,7 +8,7 @@ const Contact = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   return (
-    <main className="flex justify-around gap-72 px-20 pt-20">
+    <main className="flex justify-around gap-64 py-20">
       <section className="">
         <h1 className="text-left text-3xl font-extrabold">GET IN TOUCH</h1>
         <p className="my-8 text-left">
@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="flex items-center gap-5">
             <IoLocationOutline className="w-7 h-7" />
             <span className="text-lg font-semibold">
-              Ado-Odo, Ota, Ogun State Nigeria.
+              Ado-Odo Ota. Ogun State Nigeria.
             </span>
           </div>
           <div className="flex items-center gap-5 my-5">
@@ -47,12 +47,12 @@ const Contact = () => {
     "
           />
         </label>
-        <label class="block">
+        <label className="block">
           <input
             placeholder="Email"
             value={email}
             type="email"
-            class="peer mt-8 block w-full px-2 py-3 bg-white border border-slate-300 text-sm shadow-sm placeholder-gray-800
+            className="peer mt-8 block w-full px-2 py-3 bg-white border border-slate-300 text-sm shadow-sm placeholder-gray-800
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
           />
@@ -63,7 +63,7 @@ const Contact = () => {
         <textarea
           id="message"
           rows="1"
-          class="block mt-1 px-2 py-3 w-full text-sm text-gray-900 bg-white border border-slate-300 placeholder-gray-800 focus:outline-none focus:ring-sky-500 focus:ring-1 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
+          className="block mt-1 px-2 py-3 w-full text-sm text-gray-900 bg-white border border-slate-300 placeholder-gray-800 focus:outline-none focus:ring-sky-500 focus:ring-1 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
           placeholder="Message"
         ></textarea>
         <div className="flex items-center justify-center gap-3 border-2 border-red-700 p-3 mt-8 cursor-pointer">

@@ -17,11 +17,14 @@ function Home() {
         <h1>Hi I'm :</h1>
         <ul>
           <li>
-            a dedicated <Cover>Frontend Developer</Cover> that builds
-            Experiences, Not Just Interfaces and
+            {/* a dedicated <Cover>Frontend Developer</Cover> that builds */}a
+            dedicated <span className="">Frontend Developer</span>
+            that builds Experiences, Not Just Interfaces and
           </li>
           <li>
-            a data driven, Insight Focused <Cover>Data Scientist</Cover>
+            a data driven, Insight Focused{' '}
+            <span className="">Data Scientist</span>
+            {/* a data driven, Insight Focused <Cover>Data Scientist</Cover> */}
           </li>
         </ul>
       </div>
