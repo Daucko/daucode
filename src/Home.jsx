@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { Cover } from './components/Cover';
-import Nav from './components/Nav';
-import { Outlet } from 'react-router';
+// import { Cover } from './components/Cover';
+// import Nav from './components/Nav';
+// import { Outlet } from 'react-router';
 import NavLayout from './components/NavLayout';
 
 function Home() {
@@ -17,14 +16,14 @@ function Home() {
         <h1>Hi I'm :</h1>
         <ul>
           <li>
-            {/* a dedicated <Cover>Frontend Developer</Cover> that builds */}a
-            dedicated <span className="">Frontend Developer</span>
-            that builds Experiences, Not Just Interfaces and
+            {/* a dedicated <Cover>Frontend Developer</Cover> */}a dedicated{' '}
+            <span className="">Frontend Developer</span>
+            that builds Experiences, not just Interfaces and
           </li>
           <li>
             a data driven, Insight Focused{' '}
             <span className="">Data Scientist</span>
-            {/* a data driven, Insight Focused <Cover>Data Scientist</Cover> */}
+            {/* Insight Focused <Cover>Data Scientist</Cover> */}
           </li>
         </ul>
       </div>
