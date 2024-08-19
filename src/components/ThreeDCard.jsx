@@ -1,13 +1,21 @@
 import { CardBody, CardContainer, CardItem } from '../ui/3dCard';
 import { FaGithub } from 'react-icons/fa6';
 
-export function ThreeDCard({ titleSrc, src, repo, link, title }) {
+export function ThreeDCard({
+  titleSrc,
+  src,
+  repo,
+  link,
+  title,
+  tStack,
+  description,
+}) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-[#003049] dark:text-white"
         >
           <div className="flex gap-3 items-center">
             {titleSrc ? (
@@ -21,9 +29,9 @@ export function ThreeDCard({ titleSrc, src, repo, link, title }) {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-[#003049] text-sm text-left font-medium mt-2 dark:text-neutral-300"
         >
-          Hover over this card to unleash the power of CSS perspective
+          {description}
         </CardItem>
         <CardItem
           translateZ="100"
@@ -43,12 +51,28 @@ export function ThreeDCard({ titleSrc, src, repo, link, title }) {
             ''
           )}
         </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-[#003049]0 text-sm max-w-sm mt-10 dark:text-neutral-300"
+        >
+          <span className="flex gap-6 block">
+            {tStack.map((icon, index) => {
+              const date = new Date().getTime();
+              return (
+                <span className="text-[#003049]" key={index}>
+                  {icon}
+                </span>
+              );
+            })}
+          </span>
+        </CardItem>
+        <div className="flex justify-between items-center mt-4">
           <CardItem
             translateZ={20}
             translateX={-40}
             as="button"
-            className="px-4 py-2 rounded-xl text-xl font-normal dark:text-white"
+            className="px-4 py-2 rounded-xl text-xl font-normal text-[#003049] dark:text-white"
           >
             <a href={repo}>
               <FaGithub />{' '}
@@ -61,7 +85,7 @@ export function ThreeDCard({ titleSrc, src, repo, link, title }) {
                 translateZ={20}
                 translateX={40}
                 as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                className="px-4 py-2 rounded-xl bg-[#003049] dark:bg-white dark:text-black text-white text-xs font-bold"
               >
                 Visit →
               </CardItem>

@@ -13,16 +13,17 @@ import { FaBootstrap } from 'react-icons/fa';
 import { SiRedux } from 'react-icons/si';
 import { SiStyledcomponents } from 'react-icons/si';
 import { FaSass } from 'react-icons/fa';
+import { DiDjango } from 'react-icons/di';
 
 const TechStack = () => {
   return (
     <main className="py-16">
       <h1 className="center text-3xl font-bold mb-5">GOOT AT</h1>
-      <section className="flex p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10">
-        <article className="bg-[#00000031] p-2 rounded-[1rem] flex items-center justify-between w-[52%]">
+      <section className="flex flex-col md:flex-row p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10">
+        <article className="bg-black/10 p-2 rounded-[1rem] flex items-center justify-between w-full md:w-[52%]">
           <div>
-            <h1 className="font-medium text-left">Web</h1>
-            <h1 className="font-medium">Development</h1>
+            <h1 className="font-medium text-left text-4xl">Web</h1>
+            <h1 className="font-medium text-4xl">Development</h1>
           </div>
 
           <span>
@@ -66,13 +67,16 @@ const TechStack = () => {
           <span>
             <FaSass className="w-12 h-12" />
           </span>
+          <span>
+            <DiDjango className="w-16 h-16" />
+          </span>
         </article>
       </section>
-      <section className="flex p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10 mt-10">
-        <article className="bg-[#00000031] p-2 rounded-[1rem] flex items-center justify-between w-[52%] gap-6">
+      <section className="flex items-center flex-col md:flex-row p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10 mt-10">
+        <article className="bg-black/10 p-2 rounded-[1rem] flex items-center justify-between w-full md:w-[52%] gap-6">
           <div>
-            <h1 className="font-medium text-left">Data</h1>
-            <h1 className="font-medium">Science</h1>
+            <h1 className="font-medium text-left text-3xl">Data</h1>
+            <h1 className="font-medium text-3xl">Science</h1>
           </div>
           <span>
             <svg

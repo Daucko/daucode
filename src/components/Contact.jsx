@@ -8,7 +8,7 @@ const Contact = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   return (
-    <main className="flex justify-around gap-64 py-20">
+    <main className="flex flex-col sm:flex-row justify-around gap-64 py-20">
       <section className="">
         <h1 className="text-left text-3xl font-extrabold">GET IN TOUCH</h1>
         <p className="my-8 text-left">
@@ -66,7 +66,7 @@ const Contact = () => {
           className="block mt-1 px-2 py-3 w-full text-sm text-gray-900 bg-white border border-slate-300 placeholder-gray-800 focus:outline-none focus:ring-sky-500 focus:ring-1 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
           placeholder="Message"
         ></textarea>
-        <div className="flex items-center justify-center gap-3 border-2 border-red-700 p-3 mt-8 cursor-pointer">
+        <div className="flex items-center justify-center gap-3 border-2 border-[#003049] p-3 mt-8 cursor-pointer bg-[#003049] text-white hover:bg-[#003049]/90">
           <button type="button">Submit</button>
           <FaArrowRightLong />
         </div>
