@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <main className="text-center text-[#003049] bg-[#fdf0d5] min-h-screen dark:bg-[#003049] dark:text-[#fdf0d5]">
-      <div className="flex flex-col sm:flex-row items-center justify-between sticky top-0 bg-black/10 mb-5 p-3">
+      <div className="flex flex-col sm:flex-row items-center justify-between sticky top-0 bg-black/25 dark:bg-white/50 mb-5 p-3">
         <div className="text-left text-4xl font-bold">Daucode</div>
         <div className="flex gap-5 items-center">
           <a
