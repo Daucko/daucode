@@ -15,9 +15,9 @@ export function ThreeDCard({
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-[#003049] dark:text-white"
+          className="text-xl font-bold text-[#003049] dark:text-[#fdf0d5]"
         >
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-1 sm:gap-3 items-center">
             {titleSrc ? (
               <img src={titleSrc} className="w-10 h-10" alt={title} />
             ) : (
@@ -29,7 +29,7 @@ export function ThreeDCard({
         <CardItem
           as="p"
           translateZ="60"
-          className="text-[#003049] text-sm text-left font-medium mt-2 dark:text-neutral-300"
+          className="text-[#003049] text-sm text-left font-medium mt-2 dark:text-[#fdf0d5]"
         >
           {description}
         </CardItem>
@@ -54,13 +54,16 @@ export function ThreeDCard({
         <CardItem
           as="p"
           translateZ="60"
-          className="text-[#003049]0 text-sm max-w-sm mt-10 dark:text-neutral-300"
+          className="text-[#003049]0 text-sm max-w-sm mt-10 dark:text-[#fdf0d5]"
         >
-          <span className="flex gap-6 block">
+          <span className="flex gap-6">
             {tStack.map((icon, index) => {
               const date = new Date().getTime();
               return (
-                <span className="text-[#003049]" key={index}>
+                <span
+                  className="text-[#003049] dark:text-[#fdf0d5]"
+                  key={index}
+                >
                   {icon}
                 </span>
               );
@@ -72,7 +75,7 @@ export function ThreeDCard({
             translateZ={20}
             translateX={-40}
             as="button"
-            className="px-4 py-2 rounded-xl text-xl font-normal text-[#003049] dark:text-white"
+            className="px-4 py-2 rounded-xl text-xl font-normal text-[#003049] dark:text-[#fdf0d5]"
           >
             <a href={repo}>
               <FaGithub />{' '}
@@ -85,7 +88,7 @@ export function ThreeDCard({
                 translateZ={20}
                 translateX={40}
                 as="button"
-                className="px-4 py-2 rounded-xl bg-[#003049] dark:bg-white dark:text-black text-white text-xs font-bold"
+                className="px-4 py-2 rounded-xl bg-[#003049] dark:bg-[#fdf0d5] dark:text-[#003049] text-white text-xs font-bold"
               >
                 Visit →
               </CardItem>

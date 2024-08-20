@@ -22,8 +22,8 @@ const TechStack = () => {
       <section className="flex flex-col md:flex-row p-5 border-2 border-[#669bbc] rounded-[1rem] gap-10">
         <article className="bg-black/10 p-2 rounded-[1rem] flex items-center justify-between w-full md:w-[52%]">
           <div>
-            <h1 className="font-medium text-left text-4xl">Web</h1>
-            <h1 className="font-medium text-4xl">Development</h1>
+            <h1 className="font-medium text-left text-sm sm:text-4xl">Web</h1>
+            <h1 className="font-medium text-sm sm:text-4xl">Development</h1>
           </div>
 
           <span>

@@ -16,17 +16,17 @@ const Contact = () => {
           to message me on my social media accounts.
         </p>
         <article>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-3">
             <IoLocationOutline className="w-7 h-7" />
             <span className="text-lg font-semibold">
               Ado-Odo Ota. Ogun State Nigeria.
             </span>
           </div>
-          <div className="flex items-center gap-5 my-5">
+          <div className="flex items-center gap-3 my-5">
             <FiPhone className="w-7 h-7" />
             <span className="text-lg font-semibold">+234 8188419693 </span>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-3">
             <GrMailOption className="w-7 h-7" />
             <span className="text-lg font-semibold">
               dauda.a.tijani@gmail.com
@@ -40,10 +40,10 @@ const Contact = () => {
             placeholder="Name"
             type="text"
             value={name}
-            className="mt-1 block w-full px-2 py-3 bg-white border border-slate-300 text-sm shadow-sm placeholder-gray-800
+            className="mt-1 block w-full px-2 py-3 bg-white border border-slate-300 text-[#003049] text-sm shadow-sm placeholder-gray-800
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       invalid:border-pink-500 invalid:text-pink-600
-      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500 dark:bg-[#fdf0d5]
     "
           />
         </label>
@@ -52,9 +52,9 @@ const Contact = () => {
             placeholder="Email"
             value={email}
             type="email"
-            className="peer mt-8 block w-full px-2 py-3 bg-white border border-slate-300 text-sm shadow-sm placeholder-gray-800
+            className="peer mt-8 block w-full px-2 py-3 bg-white border border-slate-300 text-[#003049] text-sm shadow-sm placeholder-gray-800
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
-      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none dark:bg-[#fdf0d5]"
           />
           <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
             Please provide a valid email address.
@@ -63,10 +63,10 @@ const Contact = () => {
         <textarea
           id="message"
           rows="1"
-          className="block mt-1 px-2 py-3 w-full text-sm text-gray-900 bg-white border border-slate-300 placeholder-gray-800 focus:outline-none focus:ring-sky-500 focus:ring-1 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
+          className="block mt-1 px-2 py-3 w-full text-sm bg-white border border-slate-300 placeholder-[#003049] focus:outline-none focus:ring-sky-500 focus:ring-1 focus:border-sky-500 dark:bg-[#fdf0d5] dark:border-gray-600 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
           placeholder="Message"
         ></textarea>
-        <div className="flex items-center justify-center gap-3 border-2 border-[#003049] p-3 mt-8 cursor-pointer bg-[#003049] text-white hover:bg-[#003049]/90">
+        <div className="flex items-center justify-center gap-3 border-2 border-[#003049] p-3 mt-8 cursor-pointer bg-[#003049] text-white hover:bg-[#003049]/90 hover:-translate-x-2 dark:bg-[#fdf0d5] dark:text-[#003049]">
           <button type="button">Submit</button>
           <FaArrowRightLong />
         </div>

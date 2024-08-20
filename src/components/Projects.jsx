@@ -68,10 +68,10 @@ const ani = {
   repo: 'https://github.com/Daucko/ani-care-hub',
   link: 'ani-care-hub.vercel.app',
   tStack: [
-    <GrHtml5 className="w-12 h-12" />,
-    <FaCss3 className="w-12 h-12" />,
-    <IoLogoReact className="w-12 h-12" />,
-    <RiTailwindCssFill className="w-12 h-12" />,
+    <GrHtml5 className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <FaCss3 className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <IoLogoReact className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <RiTailwindCssFill className="w-6 sm:w-12 h-6 sm:h-12" />,
   ],
 };
 
@@ -84,10 +84,10 @@ const note = {
   repo: 'https://github.com/Daucko/flexi-note-app',
   link: 'notefolio.netlify.app',
   tStack: [
-    <GrHtml5 className="w-12 h-12" />,
-    <FaCss3 className="w-12 h-12" />,
-    <IoLogoReact className="w-12 h-12" />,
-    <SiStyledcomponents className="w-12 h-12" />,
+    <GrHtml5 className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <FaCss3 className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <IoLogoReact className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <SiStyledcomponents className="w-6 sm:w-12 h-6 sm:h-12" />,
   ],
 };
 
@@ -97,8 +97,8 @@ const reactBkDjango = {
     'This Django backend codebase that serves as a robust customer information management system, securely storing and managing customer data. Additionally, the codebase exposes a RESTful API, providing a scalable and flexible interface for retrieving, updating, and manipulating customer data, enabling seamless integration with other applications and services.',
   repo: 'https://github.com/Daucko/react-backend-django',
   tStack: [
-    <FaPython className="w-12 h-12" />,
-    <DiDjango className="w-12 h-12" />,
+    <FaPython className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <DiDjango className="w-6 sm:w-12 h-6 sm:h-12" />,
   ],
 };
 
@@ -108,9 +108,9 @@ const youthDS = {
     'This repository showcases a collection of projects and scripts that leverage the power of Python, NumPy, Pandas, and Matplotlib to analyze, visualize, and gain insights from data. Through various notebooks and examples, it demonstrates expertise in data manipulation, statistical analysis, and data visualization, providing a comprehensive resource for data science and scientific computing applications.',
   repo: 'https://github.com/Daucko/youthrive-data-science',
   tStack: [
-    <FaPython className="w-12 h-12" />,
-    <SiNumpy className="w-12 h-12" />,
-    <SiPandas className="w-12 h-12" />,
+    <FaPython className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <SiNumpy className="w-6 sm:w-12 h-6 sm:h-122" />,
+    <SiPandas className="w-6 sm:w-12 h-6 sm:h-12" />,
   ],
 };
 
@@ -120,8 +120,8 @@ const crypto = {
     "This cryptocurrency app allows users to input their holdings of various coins, which are then multiplied by the current market price to calculate the total value in dollars, providing a comprehensive overview of their portfolio's worth. By aggregating the values of all entered coins, the app gives users a real-time snapshot, in pie-chart, of their overall portfolio value, enabling informed investment decisions and effortless portfolio management.",
   repo: 'https://github.com/Daucko/ts-axios',
   tStack: [
-    <GrHtml5 className="w-12 h-12" />,
-    <FaCss3 className="w-12 h-12" />,
-    <BiLogoTypescript className="w-12 h-12" />,
+    <GrHtml5 className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <FaCss3 className="w-6 sm:w-12 h-6 sm:h-12" />,
+    <BiLogoTypescript className="w-6 sm:w-12 h-6 sm:h-12" />,
   ],
 };
