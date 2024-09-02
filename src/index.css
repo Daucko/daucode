@@ -2,21 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .no-visible-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
+@property --rotate {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
-.no-visible-scrollbar::-webkit-scrollbar {
-  display: none;
-} */
+/* Moving Border Social Button Styling */
+.social-main {
+  --blue: #0173ff;
+  --rotate: 0deg;
+  position: fixed;
+  top: 40%;
+  height: 11rem;
+  width: 3.5rem;
+  overflow: hidden;
+  border-radius: 50px;
+  z-index: 9999;
+  .fancy {
+    position: absolute;
+    inset: 0;
+    &:before {
+      content: '';
+      background: conic-gradient(
+        from var(--rotate),
+        transparent 0%,
+        white 5%,
+        transparent 10%
+      );
+      position: absolute;
+      inset: 2px;
+      animation: rotate 2s linear infinite;
+    }
+    &:after {
+      content: '';
+      background: var(--blue);
+      position: absolute;
+      inset: 2px;
+      border-radius: 50px;
+      z-index: -1;
+    }
+  }
+}
 
-/* div {
-  background-color: #00000031
-} */
-
-/* body {
-  background-color: #fdf0d5;
-  color: #003049;
-} */
+@keyframes rotate {
+  to {
+    --rotate: 360deg;
+  }
+}

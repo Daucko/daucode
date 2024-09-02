@@ -8,8 +8,8 @@ const Contact = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   return (
-    <main className="flex flex-col sm:flex-row justify-around gap-64 py-20">
-      <section className="">
+    <main className="flex flex-col sm:flex-row justify-around gap-20 sm:gap-64 py-10 sm:py-20">
+      <section className="p-10 sm:pl-0">
         <h1 className="text-left text-3xl font-extrabold">GET IN TOUCH</h1>
         <p className="my-8 text-left">
           Please fill out the form in this section to contact me, or feel free
@@ -24,7 +24,12 @@ const Contact = () => {
           </div>
           <div className="flex items-center gap-3 my-5">
             <FiPhone className="w-7 h-7" />
-            <span className="text-lg font-semibold">+234 8188419693 </span>
+            <a
+              href="https://wa.me/12345678900?text=Hello%20there!"
+              className="text-lg font-semibold"
+            >
+              +234 8188419693{' '}
+            </a>
           </div>
           <div className="flex items-center gap-3">
             <GrMailOption className="w-7 h-7" />
@@ -34,7 +39,7 @@ const Contact = () => {
           </div>
         </article>
       </section>
-      <form action="" className="w-full">
+      <form action="" className="w-full pt-2 sm:pt-16 pl-10 sm:pl-0">
         <label className="block ">
           <input
             placeholder="Name"

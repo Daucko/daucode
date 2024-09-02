@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <main className="text-left mt-10">
+    <main className="text-left mt-10 pl-10">
       <h1 className="text-xl md:text-4xl font-bold">About Me</h1>
       <p className="text-base md:text-xl mt-4">
         As an Electrical and Electronics Engineer turned Frontend Developer and
